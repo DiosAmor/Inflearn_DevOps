@@ -14,8 +14,7 @@ jobs:
       - run: docker run -e CI=true diosamor/react-test npm test
 
       - name: Generate deployment package
-        run: zip -r deploy.zip react-docker-gh-app
-
+        run: zip -r deploy.zip . -x *.git -x docker-compose-app -x docker-react-app -x dockerfile-folder -x nodejs-docker-app
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
         with:
