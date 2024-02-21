@@ -5,6 +5,6 @@ WORKDIR '/app'
 COPY react-docker-gh-app/package.json .
 RUN npm install
 
-COPY . .
+COPY react-docker-gh-app/. .
 
 CMD ["npm","run","start"]
