@@ -1,0 +1,24 @@
+# Terraform 상태 파일 및 백업
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform 플랜 파일
+*.tfplan
+
+# .terraform 디렉토리 (플러그인, 캐시 등)
+.terraform/
+
+# 변수 파일 (민감 정보 포함 가능)
+*.tfvars
+*.tfvars.json
+
+# IDE/에디터 관련 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS별 임시 파일
+.DS_Store
+Thumbs.db
